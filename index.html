@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pousada Secreta - Um lugar especial para relaxar e se desconectar.">
+    <meta name="keywords" content="pousada, relaxar, desconectar, natureza, tranquilidade">
+    <meta name="author" content="Vitor Gabriel">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+    <link rel="icon" href="img/img1.jpg" type="image/png">
+    <title>Pousada Secreta</title>
+</head>
+<body>
+
+    <header>
+
+<!-- MENU -->
+         <div class="topo">
+
+            <div class="text">
+
+                <h2>Pousada <span>Secreta</span></h2>
+
+            </div>
+
+            <div class="menu">
+
+                <div class="menu-hamburguer" id="menu-btn">
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                </div>
+
+                <nav id="nav">
+
+                    <ul>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#rota">ROTA</a></li>
+                        <li><a href="/POUSADA_SECRETA/quartos/quartos.html">QUARTOS</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+<!--SCRIPT SO MENU -->
+<script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('nav');
+
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('ativo');
+    });
+</script>
+
+<!-- CONTEUDO -->
+    <main class="main_1">
+
+<!-- BANNER -->
+        <section class="banner">
+
+            <div class="conteudo">
+
+                <div class="titulo">
+                    <h1>Pousada Secreta</h1>
+                    <p>
+                        A pousada resevada em Angra dos Reis
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+<!-- APRESENTAÇÃO DA POUSADA -->
+        <section class="apresentacao">
+
+            <div class="texto-apresentacao">
+                <h2>SEJA BEM-VINDO(A)</h2>
+                <P>
+                    Relaxe em nossas acomodações e curta o melhor de Angra dos Reis.
+                </P>
+                <p>
+                    Temos quartos para solteiros, casais e famílias. 
+                </p>
+            </div>
+<!-- EX DE QUARTOS DA POUSADA -->
+            <div class="ex-quartos">
+
+                <div class="ex-quartos_1">
+                    <img src="img/quarto-solteiro1.jpg" alt="exemplo de quartos solteiro">
+                    <div class="link"><a href="#quarto-solteiro">QUARTO DE SOLTEIRO</a></div>
+                </div>
+
+
+                <div class="ex-quartos_1">
+                    <img src="img/quarto-casal1.jpg" alt="exemplo de quartos CASAL">
+                    <div class="link"><a href="#quarto-casal">QUARTO DE CASAL</a></div>
+                </div>
+
+
+                <div class="ex-quartos_1">
+                    <img src="img/quarto-familia1.jpg" alt="exemplo de quartos familia">
+                    <div class="link"><a href="#quarto-familia">QUARTO DE FAMILIA</a></div>
+                </div>
+
+                
+            </div>
+
+        </section>
+<!-- ROTA DA POUSADA -->
+        <section id="rota">
+            <div class="texto-rota">
+
+                <h2>ROTA</h2>
+
+                <p>
+                    Vejá como chegar ate a pousada.
+                </p>
+
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49400.69678500708!2d-44.37462840082725!3d-23.03372943262185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c522c1a924233%3A0x83e20c2025822e51!2sIlha%20Botinas!5e0!3m2!1spt-BR!2sbr!4v1748389493105!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+<!-- SOBRE A POUSADA -->        
+        <section id="sobre">
+            
+            <div class="sobre_a_pousada">
+                <h2>SOBRE A POUSADA!</h2>
+
+                <P>
+                    Conheça um pouco sobre nossa pousada.
+                </P>
+
+            </div>
+
+            <div class="container-sobre">
+
+                <div class="card">
+                    <div class="text-sobre">
+                        <h3>A pousada</h3>
+                        <p>
+                            A Pousada Dev dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar.
+                        </p>
+                    </div>
+                    <div class="img-sobre">
+                        <img src="img/img1.jpg" alt=" imagem da Pousada Secreta"class="img-card-2">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="text-sobre">
+                        <h3>Alimentação</h3>
+    
+                        <p>
+                            A pousada serve café da manhã em estilo continental ou buffet.
+                            Nossos restaurantes funcionam 24hrs
+                        </p>
+    
+                    </div>
+                <div class="img-sobre">
+                    <img src="img/img3.jpg" alt="alimentos da pousada" class="img-card">
+                </div>
+                </div>
+
+                <div class="card">
+                    <div class="text-sobre">
+                        <h3>Nossos quartos</h3>
+                        <p>
+                            Os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições. Além disso, as unidades da Pousada Dev contam com ar-condicionado e guarda-roupa.
+                        </p>
+                    </div>
+                    <div class="img-sobre">
+                        <img src="img/img2.jpg" alt="nossos quartos" class="img-card">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="text-sobre">
+                        <h3>Recepção</h3>
+                        <p>
+                            Nossa recepção fica aberta 24hrs.
+                        </p>
+                    </div>
+                    <div class="img-sobre">
+                        <img src="img/img5.jpg" alt="nossa recpeção" class="img-card">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="quartos">
+     
+        </section>
+
+    </main>
+
+    <footer>
+<!-- RODAPE DA POUSADA -->
+        <div class="conteiner-contato">
+
+            <div class="titulo-rodape">
+                <h3>Entrem em contato conosco:</h3>
+            </div>
+
+            <div class="endereco-rodape">
+
+                <img src="img/icones/endereco.png" alt="ex de endereço">
+
+                <p>Endereço Av. 123, 222 - Rio de Janeiro</p>
+
+            </div>
+
+            <div class="telefone-rodape">
+
+                <img src="img/icones/telefone.png" alt="ex de telefone">
+
+                <a href="tel: +55 (62) 9 9988-8651">Cel: +55 (62) 9 9988-8651</a>
+
+            </div>
+
+            <div class="booking-rodape">
+
+                <img src="img/icones/calendario.png" alt="ex de calendario">
+
+                <p>Faça sua reserva pelo <a href="https://www.booking.com/index.pt-br.html?aid=376980" target="_blank"> Booking.com</a></p>
+
+            </div>
+
+        </div>
+
+        <div class="direitos">
+<!-- DESENVOLVEDOR -->
+            <p>
+                &copy; copyright - <a href="https://github.com/VGBCodev">Vitor Gabriel</a> (VGBCodev) - 2025
+                <br>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

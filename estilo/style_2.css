@@ -1,0 +1,462 @@
+/* CSS Document */
+
+@charset "UTF-8";
+
+
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do topo */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-family: 'Souce Sans Pro', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    
+}
+
+.topo {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  color: #0000008b;
+  margin-left: 15%;
+  cursor: default;
+}
+
+.text h2 {
+  font-size: 1.7em;
+}
+
+.text span {
+  color: rgba(0, 166, 255, 0.809);
+}
+
+/* Estilo padrão do menu */
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu { 
+    transition: 1.5s;
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+}
+
+.menu li {
+    cursor: default;
+    font-size: 1.3em;
+}
+
+.menu li a {
+    cursor: default;
+    text-decoration: none;
+    color: #0000008b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Oculta o botão por padrão */
+.menu-hamburguer {
+  display: none;
+}
+
+/* Estilo do botão hamburguer */
+.linha {
+  height: 4px;
+  width: 35px;
+  background: #000;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1050px) {
+  .linha {
+  height: 2.5px;
+  width: 25px;
+  background: #000;
+  margin: 4px 0;
+  border-radius: 2px;
+  }
+  .menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+  }
+
+  #nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px; /* Ajuste a posição conforme necessário */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    z-index: 100;
+  }
+
+  #nav.ativo {
+    display: flex;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.conteudo {
+    background-image: url(/POUSADA_SECRETA/img/img-fundo.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    background-color: rgba(0, 0, 0, 0.365);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    margin: 20%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    border-top: 3px solid rgba(255, 255, 255, 0.64);
+    border-right: 3px solid rgba(255, 255, 255, 0.634);
+}
+
+.titulo h1 {
+    margin: 0;
+    padding: auto;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);    
+}
+.titulo p {
+    margin: 0;
+    padding: auto;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        height: 80vw;
+    }
+    .titulo {
+        line-height: 1.2;
+        width: 50%;
+        margin: 20% auto;
+        height: 25vh;
+        padding: 20px;
+    }
+    .titulo h1 {
+        font-size: 2.5em;
+    }
+    .titulo p {
+        font-size: 1.9em;
+    }
+  
+}
+
+
+/* Estilo do conteúdo */
+.linha_dos_menus {
+  height: 10vh;
+  text-align: center;
+  background-color: rgba(62, 162, 150, 0.788);
+}
+
+.conteudo_quartos {
+  padding: 5px;
+  width: 100%;
+  line-height: 1.4;
+  color: #0f0f0f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.quarto-solteiro, .quarto-casal, .quarto-familia {
+  background-color: rgba(255, 255, 255, 0.74);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.568);
+  border-left: 10px solid rgba(62, 162, 150, 0.788);
+  width: 100%;
+  max-width: 700px;
+  height: 14.2vh;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.texto-quarto-solteiro, .texto-quarto-casal, .texto-quarto-familia {
+  font-style: italic;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.2em;
+  color: #000;
+}
+
+.img-quarto-solteiro, .img-quarto-casal,.img-quarto-familia {
+  width: 40%;
+  height: auto;
+}
+
+.img-quarto-familia .img-1 {
+  width: 92.2%;
+  height: 85%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.img-quarto-familia .img-2 {
+  width: 92.2%;
+  height: 94.5%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.img-quarto-familia img {
+  border-radius: 5px;
+  width: 92.2%;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.img-quarto-casal img {
+  border-radius: 5px;
+  width: 92.2%;
+  height: 85%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.quarto-solteiro img {
+  border-radius: 5px;
+  width: 92.2%;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.informações { 
+  background-color: rgba(255, 255, 255, 0.74);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.6;
+  border: 3px solid rgba(62, 162, 150, 0.905);
+}
+
+.informações h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.informações ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quarto-solteiro-banner {
+  position: relative;
+  background-image: url(../img/quarto-solteiro1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.quarto-solteiro-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.692); 
+  z-index: 0;
+}
+
+.quarto-solteiro-banner * {
+  position: relative;
+  z-index: 1;
+}
+
+.quarto-casal-banner {
+  position: relative;
+  background-image: url(../img/quarto-casal3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.quarto-casal-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.692); 
+  z-index: 0;
+}
+
+.quarto-casal-banner * {
+  position: relative;
+  z-index: 1;
+}
+
+.quarto-familia-banner {
+  position: relative;
+  background-image: url(../img/quarto-familia2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin-bottom: -20px;
+}
+
+.quarto-familia-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.692); 
+  z-index: 0;
+}
+
+.quarto-familia-banner * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.conteiner-contato {
+    background-color: rgb(3, 121, 96);
+    color: #fff;
+    padding: 15px 0;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-contato img {
+    width: 50px;
+    padding: 0;
+    
+}
+
+.titulo-rodape {
+  margin: 0 0 0 5px;
+  width: 250px;
+}
+
+.endereco-rodape {
+   display: flex;
+   width: 300px;
+}
+
+.endereco-rodape img {
+    margin: 0px 5px;
+    width: 25px;
+    height: 30px;
+}
+ 
+.telefone-rodape {
+    display: flex;
+    width: 250px;
+}
+
+.telefone-rodape a {
+   color: white;
+   text-decoration: none;
+   width: 250px;
+}
+
+.telefone-rodape img {
+    margin-right: 10px;
+    width: 25px;
+    height: 30px;
+}
+
+.booking-rodape {
+    display: flex;
+    width: 250px;
+}
+
+.booking-rodape a {
+   color: white;
+   text-decoration: none;
+   width: 250px;
+}
+
+.booking-rodape img {
+    margin-right: 10px;
+    width: 25px;
+    height: 30px;
+}
+
+.direitos {
+    background-color: rgb(3, 121, 96);
+    color: #fff;
+    padding: 25px 0;
+    margin: -20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos p {
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.direitos a {
+    color: white;
+    text-decoration: none;
+}

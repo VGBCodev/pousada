@@ -1,0 +1,479 @@
+/* CSS Document */
+
+@charset "UTF-8";
+
+
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do topo */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-family: 'Souce Sans Pro', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    
+}
+
+.topo {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  color: #0000008b;
+  margin-left: 15%;
+  cursor: default;
+}
+
+.text h2 {
+  font-size: 1.7em;
+}
+
+.text span {
+  color: rgba(0, 166, 255, 0.809);
+}
+
+/* Estilo padrão do menu */
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu { 
+    transition: 1.5s;
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+}
+
+.menu li {
+    cursor: default;
+    font-size: 1.3em;
+}
+
+.menu li a {
+    cursor: default;
+    text-decoration: none;
+    color: #0000008b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Oculta o botão por padrão */
+.menu-hamburguer {
+  display: none;
+}
+
+/* Estilo do botão hamburguer */
+.linha {
+  height: 4px;
+  width: 35px;
+  background: #000;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1050px) {
+  .linha {
+  height: 2.5px;
+  width: 25px;
+  background: #000;
+  margin: 4px 0;
+  border-radius: 2px;
+  }
+  .menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+  }
+
+  #nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px; /* Ajuste a posição conforme necessário */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    z-index: 100;
+  }
+
+  #nav.ativo {
+    display: flex;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Estilo do conteúdo */
+
+/*BANEER*/
+
+.conteudo {
+    background-image: url(/POUSADA_SECRETA/img/img-fundo.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    background-color: rgba(0, 0, 0, 0.365);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    margin: 20%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    line-height: 180%;
+    border-top: 3px solid rgba(255, 255, 255, 0.64);
+    border-right: 3px solid rgba(255, 255, 255, 0.634);
+}
+
+.titulo h1 {
+    margin: 0;
+    padding: auto;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);    
+}
+.titulo p {
+    margin: 0;
+    padding: auto;
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        height: 80vw;
+    }
+    .titulo {
+        width: 50%;
+        margin: 20% auto;
+        height: 25vh;
+        padding: 20px;
+    }
+    .titulo h1 {
+        font-size: 1.5em;
+    }
+    .titulo p {
+        font-size: 0.9em;
+    }
+  
+}
+
+/*APRESENTAÇÃO*/
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% auto;
+    width: 100%;
+    height: auto;
+}
+
+.texto-apresentacao {
+    width: 65%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333333be;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 2;
+    padding: 20px;
+}
+
+.texto-apresentacao h2 {
+    font-size: 1.5em;
+    color: #0000008b;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.ex-quartos {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    flex-direction: row;
+    width: 60%;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.ex-quartos_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 2px;
+    
+}
+
+.ex-quartos_1 img {
+    width: 100%;
+}
+
+.link {
+    width: 92%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-bottom: 5px  solid rgba(62, 162, 150, 0.905);
+}
+
+.ex-quartos a {
+    text-decoration: none;
+    color: #0000008b;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 15px ;
+    font-size: 1em;
+    line-height: 1;
+}
+
+/*FIM APRESENTAÇÃO*/
+
+/*ROTA*/
+
+.texto-rota {
+    width: 65%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333333be;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 2;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.texto-rota h2 {
+    font-size: 1.5em;
+    color: #0000008b;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+iframe {
+    width: 100%;
+    height: 30vw;
+    border: none;
+    margin-top: 20px;
+}
+
+/*FIM ROTA*/
+
+/*SOBRE*/
+
+.sobre_a_pousada {
+    width: 65%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333333be;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 2;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.sobre_a_pousada h2 {
+    font-size: 1.5em;
+    color: #0000008b;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.container-sobre {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 calc(50% - 10px); /* 2 colunas com espaçamento */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  gap: 15px;
+}
+
+.text-sobre {
+  flex: 2;
+}
+
+.text-sobre h3 {
+  margin: 0 0 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-sobre p {
+  margin: 0;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.4;
+}
+
+.img-sobre {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img-card {
+  width: 110%;
+  height: 104px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.img-card-2 {
+    width: 110%;
+    height: 104px;
+    border-radius: 2px;
+}
+
+.conteiner-contato {
+    background-color: rgb(3, 121, 96);
+    color: #fff;
+    padding: 15px 0;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-contato img {
+    width: 50px;
+    padding: 0;
+    
+}
+
+.titulo-rodape {
+  margin: 0;
+  width: 250px;
+}
+
+.endereco-rodape {
+   display: flex;
+   width: 300px;
+}
+
+.endereco-rodape img {
+    margin: 0px 5px 0 5px;
+    width: 25px;
+    height: 30px;
+}
+ 
+.telefone-rodape {
+    display: flex;
+    width: 250px;
+}
+
+.telefone-rodape a {
+   color: white;
+   text-decoration: none;
+   width: 250px;
+}
+
+.telefone-rodape img {
+    margin-right: 10px;
+    width: 25px;
+    height: 30px;
+}
+
+.booking-rodape {
+    display: flex;
+    width: 250px;
+}
+
+.booking-rodape a {
+   color: white;
+   text-decoration: none;
+   width: 250px;
+}
+
+.booking-rodape img {
+    margin-right: 10px;
+    width: 25px;
+    height: 30px;
+}
+
+.direitos {
+    background-color: rgb(3, 121, 96);
+    color: #fff;
+    padding: 25px 0;
+    margin: -20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos p {
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.direitos a {
+    color: white;
+    text-decoration: none;
+}

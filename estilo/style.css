@@ -137,7 +137,7 @@ header {
 /*BANEER*/
 
 .conteudo {
-    background-image: url(/POUSADA_SECRETA/img/img-fundo.jpg);
+    background-image: url(../img/img-fundo.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
